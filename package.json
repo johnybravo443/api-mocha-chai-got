@@ -1,0 +1,27 @@
+{
+  "name": "api-mocha-chai-got",
+  "version": "1.0.0",
+  "description": "mocha chai got api framework",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "searchuser": "ENVIRONMENT=staging mocha --grep \"@searchuser\" --reporter mochawesome",
+    "createuser": "ENVIRONMENT=staging mocha --grep \"@createuser\" --reporter mochawesome",
+    "listusers": "ENVIRONMENT=staging mocha --grep \"@listusers\" --reporter mochawesome",
+    "updateuserpatch": "ENVIRONMENT=staging mocha --grep \"@patchuser\" --reporter mochawesome",
+    "updateuserput": "ENVIRONMENT=staging mocha --grep \"@putuser\" --reporter mochawesome",
+    "test": "ENVIRONMENT=staging mocha --reporter mochawesome"
+  },
+  "author": "xoxo",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.21.0",
+    "chai": "^4.3.7",
+    "got": "^12.5.3",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
+  }
+}
